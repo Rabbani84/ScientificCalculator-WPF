@@ -46,7 +46,17 @@ A desktop scientific calculator built with **C# and WPF (.NET 6)**.
 
 ## 📷 Screenshots
 
-(Standard mode, Scientific mode, Equation solver with graph)
+### Standard Mode
+![Standard Calculator](assets/screenshots/standard.png)
+
+### Scientific Mode
+![Scientific Calculator](assets/screenshots/scientific.png)
+
+### Quadratic Equation Solver
+![Quadratic Solver](assets/screenshots/quadratic.png)
+
+### Cubic Equation Solver
+![Cubic Solver](assets/screenshots/cubic.png)
 
 ---
 
