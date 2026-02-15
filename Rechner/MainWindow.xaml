@@ -1,0 +1,49 @@
+﻿ 
+    <Window x:Class="Rechner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rechner"
+        mc:Ignorable="d"
+        Title="Rechner" Height="600" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="8" >
+                <StackPanel Orientation="Horizontal">
+                    <Menu  >
+                        <MenuItem Header="☰"  FontWeight="ExtraBold" Margin="0,15" ToolTip="Liste" >
+                            
+                            <MenuItem Header="Standard"            Click="stand_Click" />
+                            <MenuItem Header="Wissenschaft"        Click="wissen_Click"/>
+                            <MenuItem Header="Gleichung Grad 2"   Click="gleichung_Click"/>
+                            <MenuItem Header="Gleichung Grad 3"   Click="MenuItem_Click"/>
+                        </MenuItem>
+                    </Menu>
+                    <!--
+                        <Button x:Name="stand"     Content="Standrad"     Margin="10" FontWeight="ExtraBold" FontSize="18" Click="stand_Click"/>
+                        <Button x:Name="wissen"    Content="Wissenschaft" Margin="10" FontWeight="ExtraBold" FontSize="18" Click="wissen_Click"/>
+                        <Button x:Name="gleichung" Content="Gleichung"    Margin="10" FontWeight="ExtraBold" FontSize="18" Click="gleichung_Click"/>
+                    -->
+                    
+                    <TextBlock x:Name="woBinIch"   Margin="12,10" FontSize="20" FontWeight="Bold"/>
+                </StackPanel>
+                <TextBox x:Name="tb" Margin="8"/>
+                <TextBlock x:Name="ergebnis" FontSize="20"/>
+            </StackPanel>
+            <Frame x:Name="HauptFenster" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        </Grid>
+        <StackPanel Grid.Column="1" Orientation="Vertical" >
+            <Label Content="Verlauf :"/>
+            <ListBox x:Name="lb" ScrollBar.Scroll="lb_Scroll" Height="250"/>
+        </StackPanel>
+    </Grid>
+</Window>

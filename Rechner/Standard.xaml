@@ -1,0 +1,55 @@
+﻿<Page x:Class="Rechner.Standard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Rechner"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Standard">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0"  x:Name="modulo"    Content="%"  Click="Button_Click_Modulo"     Margin="20" FontSize="16" FontWeight="Bold"/>
+            <Button Grid.Row="0" Grid.Column="1"  x:Name="entfernen" Content="CE" Click="Button_Click_Entfernen"  Margin="20" FontSize="16" FontWeight="Bold"/>
+            <Button Grid.Row="0" Grid.Column="2"  x:Name="back"      Content="⌫" Click="Button_Click_Back"       Margin="20" FontSize="16" FontWeight="Bold"/>
+            <Button Grid.Row="0" Grid.Column="3"  x:Name="durch"     Content="÷"  Click="durch_Click"             Margin="20" FontSize="16" FontWeight="Bold"/>
+            <Button Grid.Row="1" Grid.Column="0"   x:Name="sieben" Content="7" Click="Button_Click" Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="1" Grid.Column="1"   x:Name="acht"   Content="8" Click="Button_Click" Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="1" Grid.Column="2"   x:Name="neun"   Content="9" Click="Button_Click" Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="1" Grid.Column="3"   x:Name="mal"    Content="x" Click="mal_Click"    Margin="20"  FontSize="16" FontWeight="Bold" />
+            <Button Grid.Row="2" Grid.Column="0" x:Name="vier"  Content="4" Click="Button_Click"  Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="2" Grid.Column="1" x:Name="fuenf" Content="5" Click="Button_Click"  Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="2" Grid.Column="2" x:Name="sechs" Content="6" Click="Button_Click"  Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="2" Grid.Column="3" x:Name="minus" Content="-" Click="minus_Click"   Margin="20"  FontSize="16" FontWeight="Bold" />
+            <Button Grid.Row="3" Grid.Column="0" x:Name="eins"  Content="1" Click="Button_Click"  Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="3" Grid.Column="1" x:Name="zwei"  Content="2" Click="Button_Click"  Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="3" Grid.Column="2" x:Name="drei"  Content="3" Click="Button_Click"  Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="3" Grid.Column="3" x:Name="plus"  Content="+" Click="plus_Click"    Margin="20"  FontSize="16" FontWeight="Bold"/>
+            <Button Grid.Row="4" Grid.Column="0" x:Name="minusplus" Content="+/-" Click="Button_Click_Plus_Minus"  Margin="20"  FontSize="16" FontWeight="Bold"/>
+            <Button Grid.Row="4" Grid.Column="1" x:Name="zero"      Content="0"   Click="Button_Click"             Margin="20"  FontSize="16" FontWeight="ExtraBold"/>
+            <Button Grid.Row="4" Grid.Column="2" x:Name="komma"     Content=","   Click="Button_Click"             Margin="20"  FontSize="16" FontWeight="Bold"/>
+            <Button Grid.Row="4" Grid.Column="3" x:Name="gleish"    Content="="   Click="Button_Click_Gleish"      Margin="20"  FontSize="16" FontWeight="Bold" Background="LightBlue"/>
+        </Grid>
+    </Grid>
+</Page>
